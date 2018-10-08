@@ -1,0 +1,75 @@
+@author Ardel Alegre cs30fac
+
+Description: This program prints out a liost of numbers, prints out the same
+list backwards and skips every other number in the list,i prints the largest
+number in the list, and prints the average of four numbers.
+
+To compile the program use $ make
+To run the program use $ ./a.out
+
+Example of normal output:
+Program starting...
+0
+1
+4
+9
+16
+25
+36
+49
+64
+81
+100
+121
+144
+169
+196
+
+196
+144
+100
+64
+36
+16
+4
+0
+
+The maximum value in the array is 196 
+The integer average of 5, 15, 32, and -2 is 12
+
+How I tested my program: 
+When debugging the the compilation errors below, I was able to see the
+error outputs from the terminal and fix the syntax errors.
+For the logical errors I tested the program using gdb and found that there were
+three errors. The first being an infinted while loop that was missing an
+incramentor. The second being the average function adding its parameters
+incorrectly, and the third being the everyotherreversed file missing the last
+element it was supposed to print.
+
+README questions:
+
+1) It is an acdemic integrity violation to turn in code written by someone else
+you are claiming credit for someone elses work
+
+2)
+Compiltion error in pa0.c: #include "pa0" ->#include "pa0.h"
+Compilation error in findMax.c line26: i -> int i
+Compilation error in pa0.c line 43: for(); { -> for () {
+Compilation error in pa0.c line 61: "v4"-> v4
+Compilation error in pa0.h line 26: array -> *array
+
+3)printf("Program starting...\n");
+4) The same C code is displayed because the assembly code is running
+5)I am now in avg4
+6) $1 = 20
+7) $2 = 52
+8) $3 = 12, p$r0, p/d $r0
+9) Average
+10) 196, C4
+11) A breakpoint is he line where the gdb will pause while running code
+12) In this specific program I would be debugging avg4, but I would normally be
+debugging the add function
+13)$sp is astack pointer
+14) printf("%d" + "%d" + " %c %d", b, b, plus, b);
+15) L: Screen bottom, f: find char, /.: find, H: screen top
+16) yes, no output
